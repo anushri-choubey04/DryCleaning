@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saarvin Dry Clean</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-logo">Saarvin DryCleaning</div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#booking">Booking</a>
+        <a href="#login">Login</a>
+      </div>
+    </nav>
+
+    <div class="wrapper">
+      <section class="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Welcome to <span>Saarvin Dry Clean</span></h1>
+            <p>Your Wardrobe’s New Best Friend</p>
+            <button class="cta" onclick="openModal('pickupModal')">
+              Schedule Pickup
+            </button>
+          </div>
+          <img src="images/men.jpg" alt="Dry Cleaning" class="hero-image" />
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div
+          class="cards"
+          grid-template-columns="repeat(auto-fill, minmax(180px, 2fr))"
+        >
+          <div class="card">Dry Cleaning</div>
+          <div class="card">Shirt Cleaning</div>
+          <div class="card">Lehenga Dry Clean</div>
+          <div class="card">Shoe Cleaning</div>
+        </div>
+      </section>
+
+      <section class="price" id="price">
+        <h2>Dry Cleaning Prices</h2>
+        <div class="price-list">
+          <div class="price-row">
+            <div class="price-info">
+              <h4>Shirt</h4>
+              <p>₹100</p>
+            </div>
+            <img src="images/Shirt.png" alt="Shirt" />
+          </div>
+          <div class="price-row">
+            <div class="price-info">
+              <h4>Suit</h4>
+              <p>₹250</p>
+            </div>
+            <img src="images/Suit.png" alt="Suit" />
+          </div>
+          <div class="price-row">
+            <div class="price-info">
+              <h4>Lehenga</h4>
+              <p>₹400</p>
+            </div>
+            <img src="images/lehenga.jpg" alt="Lehenga" />
+          </div>
+          <div class="price-row">
+            <div class="price-info">
+              <h4>Dress</h4>
+              <p>₹150</p>
+            </div>
+            <img src="images/dress.jpg" alt="Dress" />
+          </div>
+        </div>
+      </section>
+
+      <!--<section class="estimator" id="estimator">
+        <h2>Price Estimator</h2>
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/4298/4298753.png"
+          class="illustrations"
+          alt="Price Estimator Illustration"
+        />
+        <button class="cta" onclick="openModal('estimateModal')">
+          Estimate Now
+        </button>
+      </section>  -->
+
+      <section class="booking" id="booking">
+        <img
+          src="images/shop.jpg"
+          class="illustration"
+          alt="Book Pickup Illustration"
+        />
+        <button class="button" onclick="openModal('bookModal')">
+          Book Now
+        </button>
+      </section>
+
+      <section class="testimonials" id="testimonials">
+        <h2>What Customers Say</h2>
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p>“Excellent service and very professional team!”</p>
+        </div>
+      </section>
+
+      <div class="footer">
+        <p>&copy; 2025 Saarvin Dry Clean. All rights reserved.</p>
+        <p>
+          Contact us: <a href="mailto:info@saarvin.com">info@saarvin.com</a>
+          <br />
+          +91-9876543210
+        </p>
+      </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="pickupModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('pickupModal')"
+          >&times;</span
+        >
+        <h3>Schedule Pickup</h3>
+        <input type="text" placeholder="Your Name" />
+        <input type="text" placeholder="Address" />
+        <input type="date" />
+        <button>Submit</button>
+      </div>
+    </div>
+
+    <div id="estimateModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('estimateModal')"
+          >&times;</span
+        >
+        <h3>Estimate Price</h3>
+        <input type="text" placeholder="Number of Items" />
+        <input type="text" placeholder="Type of Items" />
+        <button>Estimate</button>
+      </div>
+    </div>
+
+    <div id="bookModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('bookModal')">&times;</span>
+        <h3>Book a Pickup</h3>
+        <input type="date" />
+        <input type="file" />
+        <button>Confirm Booking</button>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script>
+      function openModal(id) {
+        document.getElementById(id).style.display = "flex";
+      }
+
+      function closeModal(id) {
+        document.getElementById(id).style.display = "none";
+      }
+
+      window.onclick = function (e) {
+        ["pickupModal", "estimateModal", "bookModal"].forEach((id) => {
+          const modal = document.getElementById(id);
+          if (e.target === modal) modal.style.display = "none";
+        });
+      };
+
+      function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
