@@ -432,10 +432,6 @@ section h2 {
   .price-row img {
     align-self: center;
   }
-
-  .price-row h4 {
-    font-size: bold;
-  }
   .expandable-list.collapsed .price-row:nth-child(n+7) {
   display: none;
 }
