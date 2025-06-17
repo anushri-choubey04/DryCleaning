@@ -476,6 +476,7 @@ section h2 {
 .prices-list p{
   color: rgb(9, 9, 9);
   font-family:Poppins, sans-serif;
+  gap: 10px;
 }
 
 }
