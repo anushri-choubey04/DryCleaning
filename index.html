@@ -53,34 +53,341 @@
       <section class="price" id="price">
         <h2>Dry Cleaning Prices</h2>
         <div class="price-list">
-          <div class="price-row">
-            <div class="price-info">
-              <h4>Shirt</h4>
-              <p>₹100</p>
+          <div class="expandable-list collapsed" id="expandableList">
+            <div class="price-row">
+              <div class="price-info">
+                <h4>Shirt</h4>
+                <div class="tags">
+                  <button onclick="updatePrice(this, 'Shirt', 'Kids')">
+                    Kids
+                  </button>
+                  <button onclick="updatePrice(this, 'Shirt', 'Silk')">
+                    Silk
+                  </button>
+                  <button onclick="updatePrice(this, 'Shirt', 'Cotton')">
+                    Cotton
+                  </button>
+                </div>
+                <div class="prices-list" id="Shirt-prices">
+                  <p>Dry Clean: ₹80/pc</p>
+                </div>
+              </div>
+              <img src="images/Shirt.png" alt="Shirt" />
             </div>
-            <img src="images/Shirt.png" alt="Shirt" />
-          </div>
-          <div class="price-row">
-            <div class="price-info">
-              <h4>Suit</h4>
-              <p>₹250</p>
+            <div class="price-row">
+              <div class="price-info">
+                <h4>T-Shirt</h4>
+                <div class="tags">
+                  <button onclick="updatePrice(this, 'T-Shirt', 'Kids')">
+                    Kids
+                  </button>
+                  <button onclick="updatePrice(this, 'T-Shirt', 'Silk')">
+                    Silk
+                  </button>
+                  <button onclick="updatePrice(this, 'T-Shirt', 'Cotton')">
+                    Cotton
+                  </button>
+                </div>
+                <div class="prices-list" id="T-Shirt-prices">
+                  <p>Dry Clean: ₹80/pc</p>
+                </div>
+              </div>
+              <img src="images/Tshirt.png" alt="T-Shirt" />
             </div>
-            <img src="images/Suit.png" alt="Suit" />
-          </div>
-          <div class="price-row">
-            <div class="price-info">
-              <h4>Lehenga</h4>
-              <p>₹400</p>
+            <div class="price-row">
+              <div class="price-info">
+                <h4>Jacket/Blazer</h4>
+                <div class="tags">
+                  <button onclick="updatePrice(this, 'Jacket/Blazer', 'Kids')">
+                    Kids
+                  </button>
+                  <button onclick="updatePrice(this, 'Jacket/Blazer', 'Cotton')">
+                    Cotton
+                  </button>
+                  <button onclick="updatePrice(this, 'Jacket/Blazer', 'Causal')">
+                    Causal
+                  </button>
+                  <button onclick="updatePrice(this, 'Jacket/Blazer', 'Formal')">
+                    Formal
+                  </button>
+                  <button onclick="updatePrice(this, 'Shirt', 'Leather')">
+                    Leather
+                  </button>
+                </div>
+                <div class="prices-list" id="Jacket/Blazer-prices">
+                  <p>Dry Clean: ₹150/pc</p>
+                </div>
+              </div>
+              <img src="images/Tshirt.png" alt="Jacket/Blazer" />
             </div>
-            <img src="images/lehenga.jpg" alt="Lehenga" />
-          </div>
-          <div class="price-row">
-            <div class="price-info">
-              <h4>Dress</h4>
-              <p>₹150</p>
+            <div class="price-row">
+              <div class="price-info">
+                <h4>Overcoat</h4>
+                <div class="tags">
+                  <button onclick="updatePrice(this, 'Overcoat', 'Kids')">
+                    Kids
+                  </button>
+                  <button onclick="updatePrice(this, 'Overcoat', 'Causal')">
+                    Causal
+                  </button>
+                  <button onclick="updatePrice(this, 'Overcoat', 'Leather')">
+                    Leather
+                  </button>
+                  <button onclick="updatePrice(this, 'Overcoat', 'Fur')">
+                    Fur
+                  </button>
+                </div>
+                <div class="prices-list" id="Overcoat-prices">
+                  <p>Dry Clean: ₹299/pc</p>
+                </div>
+              </div>
+              <img src="images/Tshirt.png" alt="Overcoat" />
             </div>
-            <img src="images/dress.jpg" alt="Dress" />
+            <div class="price-row">
+              <div class="price-info">
+                <h4>Sweater</h4>
+                <div class="tags">
+                  <button onclick="updatePrice(this, 'Sweater', 'Kids')">
+                    Kids
+                  </button>
+                  <button onclick="updatePrice(this, 'Sweater', 'Wool')">
+                    Wool
+                  </button>
+                  <button onclick="updatePrice(this, 'Sweater', 'Cardign')">
+                    Cardign
+                  </button>
+                </div>
+                <div class="prices-list" id="Sweater-prices">
+                  <p>Dry Clean: ₹150/pc</p>
+                </div>
+              </div>
+              <img src="images/Tshirt.png" alt="Sweater" />
+            </div>
+            <div class="price-row">
+              <div class="price-info">
+                <h4>Kurta</h4>
+                <div class="tags">
+                  <button onclick="updatePrice(this, 'Kurta', 'Kids')">
+                    Kids
+                  </button>
+                  <button onclick="updatePrice(this, 'Kurta', 'Silk')">
+                    Silk
+                  </button>
+                  <button onclick="updatePrice(this, 'Kurta', 'Cotton')">
+                    Cotton
+                  </button>
+                  <button onclick="updatePrice(this, 'Kurta', 'Fancy')">
+                    Fancy
+                  </button>
+                  <button onclick="updatePrice(this, 'Kurta', 'Linen')">
+                    Linen
+                  </button>
+                </div>
+                <div class="prices-list" id="Kurta-prices">
+                  <p>Dry Clean: ₹80/pc</p>
+                </div>
+              </div>
+              <img src="images/Suit.png" alt="Kurta" />
+            </div>
+            <div class="price-row">
+              <div class="price-info">
+                <h4>Sherwani</h4>
+                <div class="tags">
+                  <button onclick="updatePrice(this, 'Sherwani', 'Kids')">
+                    Kids
+                  </button>
+                  <button onclick="updatePrice(this, 'Sherwani', 'Silk')">
+                    Silk
+                  </button>
+                  <button onclick="updatePrice(this, 'Sherwani', 'Cotton')">
+                    Cotton
+                  </button>
+                  <button onclick="updatePrice(this, 'Sherwani', 'Wedding')">
+                    Wedding
+                  </button>
+                </div>
+                <div class="prices-list" id="Sherwani-prices">
+                  <p>Dry Clean: ₹150/pc</p>
+                </div>
+              </div>
+              <img src="images/Tshirt.png" alt="Sherwani" />
+            </div>
+            <div class="price-row">
+              <div class="price-info">
+                <h4>Trouser/Jeans</h4>
+                <div class="tags">
+                  <button onclick="updatePrice(this, 'Trouser/Jeans', 'Kids')">
+                    Kids
+                  </button>
+                  <button onclick="updatePrice(this, 'Trouser/Jeans', 'Jeans')">
+                    Jeans
+                  </button>
+                  <button onclick="updatePrice(this, 'Trouser/Jeans', 'Causal')">
+                    Casual
+                  </button>
+                  <button onclick="updatePrice(this, 'Trouser/Jeans', 'Formal')">
+                    Formal
+                  </button>
+                </div>
+                <div class="prices-list" id="Trouser/Jeans-prices">
+                  <p>Dry Clean: ₹100/pc</p>
+                </div>
+              </div>
+              <img src="images/Tshirt.png" alt="Trouser/Jeans" />
+            </div>
+            <div class="price-row">
+              <div class="price-info">
+                <h4>Shorts/HalfPant</h4>
+                <div class="tags">
+                  <button onclick="updatePrice(this, 'Shorts/HalfPant', 'Kids')">
+                    Kids
+                  </button>
+                  <button onclick="updatePrice(this, 'Shorts/HalfPant', 'Cotton')">
+                    Cotton
+                  </button>
+                </div>
+                <div class="prices-list" id="Shorts/HalfPant-prices">
+                  <p>Dry Clean: ₹79/pc</p>
+                </div>
+              </div>
+              <img src="images/Tshirt.png" alt="Shorts/HalfPant" />
+            </div>
+            <div class="price-row">
+              <div class="price-info">
+                <h4>Saree</h4>
+                <div class="tags">
+                  <button onclick="updatePrice(this, 'Saree', 'Kids')">
+                    Kids
+                  </button>
+                  <button onclick="updatePrice(this, 'Saree', 'Silk')">
+                    Silk
+                  </button>
+                  <button onclick="updatePrice(this, 'Saree', 'Cotton')">
+                    Cotton
+                  </button>
+                  <button onclick="updatePrice(this, 'Saree', 'Wedding')">
+                    Wedding
+                  </button>
+                </div>
+                <div class="prices-list" id="Saree-prices">
+                  <p>Dry Clean: ₹120/pc</p>
+                </div>
+              </div>
+              <img src="images/Tshirt.png" alt="Saree" />
+            </div>
+            <div class="price-row">
+              <div class="price-info">
+                <h4>Gown/Anarkali</h4>
+                <div class="tags">
+                  <button onclick="updatePrice(this, 'Gown/Anarkali', 'Kids')">
+                    Kids
+                  </button>
+                  <button onclick="updatePrice(this, 'Gown/Anarkali', 'Silk')">
+                    Silk
+                  </button>
+                  <button onclick="updatePrice(this, 'Gown/Anarkali', 'Wedding')">
+                    Wedding
+                  </button>
+                </div>
+                <div class="prices-list" id="Gown/Anarkali-prices">
+                  <p>Dry Clean: ₹399/pc</p>
+                </div>
+              </div>
+              <img src="images/Tshirt.png" alt="Gown/Anarkali" />
+            </div>
+            <div class="price-row">
+              <div class="price-info">
+                <h4>Lehenga</h4>
+                <div class="tags">
+                  <button onclick="updatePrice(this, 'Lehenga', 'Kids')">
+                    Kids
+                  </button>
+                  <button onclick="updatePrice(this, 'Lehenga', 'Silk')">
+                    Silk
+                  </button>
+                  <button onclick="updatePrice(this, 'Lehenga', 'Cotton')">
+                    Cotton
+                  </button>
+                  <button onclick="updatePrice(this, 'Lehenga', 'Wedding')">
+                    Wedding
+                  </button>
+                </div>
+                <div class="prices-list" id="Lehenga-prices">
+                  <p>Dry Clean: ₹299/pc</p>
+                </div>
+              </div>
+              <img src="images/lehenga.jpg" alt="Lehenga" />
+            </div>
+            <div class="price-row">
+              <div class="price-info">
+                <h4>Blouse/Choli</h4>
+                <div class="tags">
+                  <button onclick="updatePrice(this, 'Blouse/Choli', 'Kids')">
+                    Kids
+                  </button>
+                  <button onclick="updatePrice(this, 'Blouse/Choli', 'Silk')">
+                    Silk
+                  </button>
+                  <button onclick="updatePrice(this, 'Blouse/Choli', 'Cotton')">
+                    Cotton
+                  </button>
+                  <button onclick="updatePrice(this, 'Blouse/Choli', 'Wedding')">
+                    Wedding
+                  </button>
+                </div>
+                <div class="prices-list" id="Blouse/Choli-prices">
+                  <p>Dry Clean: ₹80/pc</p>
+                </div>
+              </div>
+              <img src="images/dress.jpg" alt="Blouse/Choli" />
+            </div>
+            <div class="price-row">
+              <div class="price-info">
+                <h4>Top/Kurti</h4>
+                <div class="tags">
+                  <button onclick="updatePrice(this, 'Top/Kurti', 'Kids')">
+                    Kids
+                  </button>
+                  <button onclick="updatePrice(this, 'Top/Kurti', 'Silk')">
+                    Silk
+                  </button>
+                  <button onclick="updatePrice(this, 'Top/Kurti', 'Cotton')">
+                    Cotton
+                  </button>
+                </div>
+                <div class="prices-list" id="Top/Kurti-prices">
+                  <p>Dry Clean: ₹50/pc</p>
+                </div>
+              </div>
+              <img src="images/Tshirt.png" alt="Top/Kurti" />
+            </div>
+            <div class="price-row">
+              <div class="price-info">
+                <h4>Dress</h4>
+                <div class="tags">
+                  <button onclick="updatePrice(this, 'Dress', 'Kids')">
+                    Kids
+                  </button>
+                  <button onclick="updatePrice(this, 'Dress', 'Silk')">
+                    Silk
+                  </button>
+                  <button onclick="updatePrice(this, 'Dress', 'Cotton')">
+                    Cotton
+                  </button>
+                  <button onclick="updatePrice(this, 'Dress', 'Party')">
+                    Party
+                  </button>
+                </div>
+                <div class="prices-list" id="Dress-prices">
+                  <p>Dry Clean: ₹120/pc</p>
+                </div>
+              </div>
+              <img src="images/Tshirt.png" alt="Dress" />
+            </div>
           </div>
+          <button class="toggle-btn" onclick="toggleList()">
+            Tap to see full list
+          </button>
         </div>
       </section>
 
@@ -161,26 +468,6 @@
       </div>
     </div>
 
-    <!-- Script -->
-    <script>
-      function openModal(id) {
-        document.getElementById(id).style.display = "flex";
-      }
-
-      function closeModal(id) {
-        document.getElementById(id).style.display = "none";
-      }
-
-      window.onclick = function (e) {
-        ["pickupModal", "estimateModal", "bookModal"].forEach((id) => {
-          const modal = document.getElementById(id);
-          if (e.target === modal) modal.style.display = "none";
-        });
-      };
-
-      function toggleMenu() {
-        document.getElementById("navLinks").classList.toggle("active");
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

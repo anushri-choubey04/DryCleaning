@@ -9,7 +9,7 @@ body {
 nav {
   background: #5a89f7;
   color: white;
-  padding: 15px 20px;
+  padding: 18px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,14 +44,12 @@ nav {
 }
 
 .hero-image {
-  width: 400px;
+  width: 440px;
   max-width: 90%;
 }
 .hero {
   padding: 150px 40px;
   background: linear-gradient(to right, rgb(141, 169, 250), #fff, #fff);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-
   margin: 40px 0;
   margin-top: 0%;
 }
@@ -84,6 +82,7 @@ nav {
 .cta:hover {
   box-shadow: 0 4px 15px rgba(22, 22, 23, 0.8);
 }
+/* Services Section */
 
 section {
   margin-top: 60px;
@@ -97,7 +96,7 @@ section h2 {
 }
 
 .services h2 {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
 }
 
 .cards {
@@ -109,8 +108,8 @@ section h2 {
 
 .card {
   background: white;
-  border-radius: 16px;
-  padding: 20px;
+  border-radius: 18px;
+  padding: 30px;
   width: 180px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease;
@@ -160,15 +159,21 @@ section h2 {
   align-items: left;
   background: rgb(238, 243, 247);
   padding: 10px 15px;
+  margin: 10px 0;
   border-radius: 8px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
-  gap: 400px;
+  gap: 300px;
+}
+
+.prices-list p{
+  color: rgb(9, 9, 9);
 }
 
 .price-info h4 {
   margin: 0;
-  font-size: 18px;
+  font-size: 20px;
   color: #222;
+  display: flex;
 }
 
 .price-info p {
@@ -190,6 +195,47 @@ section h2 {
   margin: 10px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.expandable-list.collapsed .price-row:nth-child(n+7) {
+  display: none;
+  
+}
+
+.toggle-btn {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.toggle-btn:hover {
+  background-color: #0056b3;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0;
+}
+.tags button {
+  margin: 5px 5px 5px 0;
+  padding: 4px 10px;
+  border: none;
+  background-color: #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  display: inline;
+}
+
+.tags button.active {
+  background-color: #000;
+  color: white;
 }
 
 .testimonial {
@@ -343,15 +389,15 @@ section h2 {
     width: 200px;
     max-width: 90%;
   }
-  .hero {
-    padding: 80px 10px;
-    background: linear-gradient(to right, #fff, #fff);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-    margin: 40px 0;
-    margin-top: 0%;
-    font-size: 1.2rem;
-    border-radius: 20px;
-  }
+   .hero {
+          padding: 100px 20px;
+          background: linear-gradient(to right, #fff, #fff);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+          border-radius: 16px;
+          margin: 40px 0;
+          margin-top: 0%;
+          font-size: 1.2rem;
+        }
 
   .cards {
     flex-direction: column;
@@ -380,10 +426,51 @@ section h2 {
     padding: 10px 15px;
     border-radius: 8px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
-    gap: 150px;
+    gap: 40px;
   }
 
   .price-row img {
     align-self: center;
   }
+  .expandable-list.collapsed .price-row:nth-child(n+7) {
+  display: none;
+}
+
+.toggle-btn {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+.tags {
+  display: flex;
+  
+  gap: 3px;
+  margin: 3px 0;
+  overflow-x: auto;
+  
+}
+.tags button {
+  
+  padding: 4px 10px;
+  border: none;
+  background-color: #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  
+}
+
+.tags button.active {
+  background-color: #000;
+  color: white;
+}
+.prices-list p{
+  color: rgb(9, 9, 9);
+}
+
 }
