@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dry Cleaning Process</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f9f9f9;
+        margin: 0;
+        padding: 30px;
+        text-align: center;
+      }
+      h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+      p.subtitle {
+        color: #666;
+        margin-bottom: 40px;
+      }
+      .steps {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+      .step {
+        background: #fff;
+        border-radius: 20px;
+        padding: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        width: 280px;
+      }
+      .step-number {
+        background-color: #00bfa5;
+        color: #fff;
+        font-size: 20px;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin: 0 auto 15px;
+      }
+      .step img {
+        width: 100px;
+        height: auto;
+        margin-bottom: 15px;
+      }
+      .step-title {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      .step-desc {
+        color: #555;
+        font-size: 14px;
+      }
+      .cta-button {
+        margin-top: 40px;
+        padding: 12px 30px;
+        font-size: 16px;
+        background-color: #ff5c5c;
+        color: #fff;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+      .cta-button:hover {
+        background-color: #c60e0e;
+      }
+
+      @media screen and (max-width: 768px) {
+        .steps {
+          flex-direction: column;
+          align-items: center;
+        }
+        .step {
+          margin-bottom: 20px;
+          width: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>How it Works</h1>
+    <p class="subtitle">
+      Book a time for collection of your dry cleaning clothes, we deliver it
+      back to you at a scheduled time slot
+    </p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <img
+          src="https://img.icons8.com/ios-filled/100/motorbike-delivery.png"
+          alt="Collect"
+        />
+        <div class="step-title">We Collect</div>
+        <div class="step-desc">
+          We collect from any day of the week, including Sundays.
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <img
+          src="https://img.icons8.com/ios-filled/100/washing-machine.png"
+          alt="Clean"
+        />
+        <div class="step-title">We DryClean</div>
+        <div class="step-desc">
+          We use eco-friendly detergents & clean your clothes with utmost care.
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">3</div>
+        <img
+          src="https://img.icons8.com/ios-filled/100/delivery.png"
+          alt="Deliver"
+        />
+        <div class="step-title">We Deliver</div>
+        <div class="step-desc">
+          We deliver your fresh DryClean clothes back at your chosen time.
+        </div>
+      </div>
+    </div>
+
+    <button class="cta-button">Order Now</button>
+  </body>
+</html>

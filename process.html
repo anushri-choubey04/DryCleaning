@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>How Does Dry Cleaning Work?</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+}
+
+.dry-cleaning {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.dry-cleaning h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  
+}
+
+/* Desktop row styles */
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+  flex-wrap: nowrap;
+}
+
+.step {
+  padding: 20px;
+  border-radius: 20px;
+  width: 280px;
+  background-color: #5a89f7;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+   background-image: linear-gradient( rgba(14, 82, 104, 0.4), rgb(193, 232, 239));
+}
+
+.step:hover {
+  transform: translateY(-5px);
+}
+
+.step img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 1.6rem;
+  line-height: 1.3;
+}
+
+.arrow {
+  font-size: 2rem;
+  color: black;
+  user-select: none;
+}
+.down-arrow {
+  font-size: 2rem;
+  margin-right: -600px;
+  color: black;
+  margin-top: -50px;
+
+}
+
+/* Responsive Mobile Grid */
+@media (max-width: 768px) {
+  .row .row-top {
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: repeat(3, 2fr);
+    display: grid;
+    padding: 5px;
+    
+    
+  }
+  .row .row-bottom {
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: repeat(3, 2fr);
+    display: grid;
+    padding: 5px;
+    
+  }
+
+  .step {
+    width: 80%;
+    padding: 5px;
+    margin: 0%;
+    
+
+  }
+  .step img{
+    width: 50px;
+    height: 50px;
+  }
+
+  .step p {
+    font-size: 1rem;
+    line-height: 1;
+    text-align: center;
+    justify-content: center;
+  }
+  .arrow, .down-arrow {
+    display: none;
+    
+  }
+
+  
+  .dry-cleaning h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: black;
+    padding: 5px;
+  }
+
+  .dry-cleaning {
+    padding: 10px;
+    margin: 0%;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <section class="dry-cleaning">
+  <h1>How Does Dry Cleaning Work?</h1>
+
+  <!-- First row -->
+  <div class="row row-top">
+    <div class="step">
+      <img src="images/step1.png" alt="Step 1">
+      <p>Bring the item to a dry cleaner</p>
+    </div>
+    <div class="arrow">→</div>
+
+    <div class="step">
+      <img src="images/step2.png" alt="Step 2">
+      <p>The item gets examined to determine how it’ll be cleaned</p>
+    </div>
+    <div class="arrow">→</div>
+
+    <div class="step">
+      <img src="images/step3.png" alt="Step 3">
+      <p>Stains are pre-treated</p>
+    </div>
+  </div>
+    <!-- Downward Arrow between rows -->
+  <div class="arrow down-arrow">↓</div>
+
+  <!-- Second row -->
+  <div class="row row-bottom">
+    <div class="step">
+      <img src="images/step6.png" alt="Step 6">
+      <p>The item is inspected and ready for pickup</p>
+    </div>
+    <div class="arrow">←</div>
+
+    <div class="step">
+      <img src="images/step5.png" alt="Step 5">
+      <p>A post spot treatment is done</p>
+    </div>
+    <div class="arrow">←</div>
+
+    <div class="step">
+      <img src="images/step4.png" alt="Step 4">
+      <p>The item is professionally cleaned</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

@@ -101,13 +101,19 @@
                   <button onclick="updatePrice(this, 'Jacket/Blazer', 'Kids')">
                     Kids
                   </button>
-                  <button onclick="updatePrice(this, 'Jacket/Blazer', 'Cotton')">
+                  <button
+                    onclick="updatePrice(this, 'Jacket/Blazer', 'Cotton')"
+                  >
                     Cotton
                   </button>
-                  <button onclick="updatePrice(this, 'Jacket/Blazer', 'Causal')">
+                  <button
+                    onclick="updatePrice(this, 'Jacket/Blazer', 'Causal')"
+                  >
                     Causal
                   </button>
-                  <button onclick="updatePrice(this, 'Jacket/Blazer', 'Formal')">
+                  <button
+                    onclick="updatePrice(this, 'Jacket/Blazer', 'Formal')"
+                  >
                     Formal
                   </button>
                   <button onclick="updatePrice(this, 'Shirt', 'Leather')">
@@ -118,7 +124,7 @@
                   <p>Dry Clean: ₹150/pc</p>
                 </div>
               </div>
-              <img src="images/Tshirt.png" alt="Jacket/Blazer" />
+              <img src="images/Jacket.png" alt="Jacket/Blazer" />
             </div>
             <div class="price-row">
               <div class="price-info">
@@ -222,10 +228,14 @@
                   <button onclick="updatePrice(this, 'Trouser/Jeans', 'Jeans')">
                     Jeans
                   </button>
-                  <button onclick="updatePrice(this, 'Trouser/Jeans', 'Causal')">
+                  <button
+                    onclick="updatePrice(this, 'Trouser/Jeans', 'Causal')"
+                  >
                     Casual
                   </button>
-                  <button onclick="updatePrice(this, 'Trouser/Jeans', 'Formal')">
+                  <button
+                    onclick="updatePrice(this, 'Trouser/Jeans', 'Formal')"
+                  >
                     Formal
                   </button>
                 </div>
@@ -233,16 +243,20 @@
                   <p>Dry Clean: ₹100/pc</p>
                 </div>
               </div>
-              <img src="images/Tshirt.png" alt="Trouser/Jeans" />
+              <img src="images/Jeans.png" alt="Trouser/Jeans" />
             </div>
             <div class="price-row">
               <div class="price-info">
                 <h4>Shorts/HalfPant</h4>
                 <div class="tags">
-                  <button onclick="updatePrice(this, 'Shorts/HalfPant', 'Kids')">
+                  <button
+                    onclick="updatePrice(this, 'Shorts/HalfPant', 'Kids')"
+                  >
                     Kids
                   </button>
-                  <button onclick="updatePrice(this, 'Shorts/HalfPant', 'Cotton')">
+                  <button
+                    onclick="updatePrice(this, 'Shorts/HalfPant', 'Cotton')"
+                  >
                     Cotton
                   </button>
                 </div>
@@ -273,7 +287,7 @@
                   <p>Dry Clean: ₹120/pc</p>
                 </div>
               </div>
-              <img src="images/Tshirt.png" alt="Saree" />
+              <img src="images/Saree.png" alt="Saree" />
             </div>
             <div class="price-row">
               <div class="price-info">
@@ -285,7 +299,9 @@
                   <button onclick="updatePrice(this, 'Gown/Anarkali', 'Silk')">
                     Silk
                   </button>
-                  <button onclick="updatePrice(this, 'Gown/Anarkali', 'Wedding')">
+                  <button
+                    onclick="updatePrice(this, 'Gown/Anarkali', 'Wedding')"
+                  >
                     Wedding
                   </button>
                 </div>
@@ -331,7 +347,9 @@
                   <button onclick="updatePrice(this, 'Blouse/Choli', 'Cotton')">
                     Cotton
                   </button>
-                  <button onclick="updatePrice(this, 'Blouse/Choli', 'Wedding')">
+                  <button
+                    onclick="updatePrice(this, 'Blouse/Choli', 'Wedding')"
+                  >
                     Wedding
                   </button>
                 </div>
@@ -345,9 +363,7 @@
               <div class="price-info">
                 <h4>Top/Kurti</h4>
                 <div class="tags">
-                  <button onclick="updatePrice(this, 'Top/Kurti', 'Kids')">
-                    Kids
-                  </button>
+                  <button onclick="updatePrice(this, 'Top/Kurti', 'Kids')">Kids</button>
                   <button onclick="updatePrice(this, 'Top/Kurti', 'Silk')">
                     Silk
                   </button>
@@ -365,24 +381,16 @@
               <div class="price-info">
                 <h4>Dress</h4>
                 <div class="tags">
-                  <button onclick="updatePrice(this, 'Dress', 'Kids')">
-                    Kids
-                  </button>
-                  <button onclick="updatePrice(this, 'Dress', 'Silk')">
-                    Silk
-                  </button>
-                  <button onclick="updatePrice(this, 'Dress', 'Cotton')">
-                    Cotton
-                  </button>
-                  <button onclick="updatePrice(this, 'Dress', 'Party')">
-                    Party
-                  </button>
+                  <button onclick="updatePrice(this, 'Dress', 'Kids')"> Kids</button>
+                  <button onclick="updatePrice(this, 'Dress', 'Silk')">Silk </button>
+                  <button onclick="updatePrice(this, 'Dress', 'Cotton')">Cotton </button>
+                  <button onclick="updatePrice(this, 'Dress', 'Party')"> Party</button>
                 </div>
                 <div class="prices-list" id="Dress-prices">
                   <p>Dry Clean: ₹120/pc</p>
                 </div>
               </div>
-              <img src="images/Tshirt.png" alt="Dress" />
+              <img src="images/Dress.png" alt="Dress" />
             </div>
           </div>
           <button class="toggle-btn" onclick="toggleList()">
@@ -390,6 +398,53 @@
           </button>
         </div>
       </section>
+
+      <section class="dry-cleaning">
+  <h1>How Does Dry Cleaning Work?</h1>
+
+  <!-- First row -->
+  <div class="row row-top">
+    <div class="step">
+      <img src="images/step1.png" alt="Step 1">
+      <p>Bring the item to a dry cleaner</p>
+    </div>
+    <div class="arrow">→</div>
+
+    <div class="step">
+      <img src="images/step2.png" alt="Step 2">
+      <p>The item gets examined to determine how it’ll be cleaned</p>
+    </div>
+    <div class="arrow">→</div>
+
+    <div class="step">
+      <img src="images/step3.png" alt="Step 3">
+      <p>Stains are pre-treated</p>
+    </div>
+  </div>
+    <!-- Downward Arrow between rows -->
+  <div class="arrow down-arrow">↓</div>
+
+  <!-- Second row -->
+  <div class="row row-bottom">
+    <div class="step">
+      <img src="images/step6.png" alt="Step 6">
+      <p>The item is inspected and ready for pickup</p>
+    </div>
+    <div class="arrow">←</div>
+
+    <div class="step">
+      <img src="images/step5.png" alt="Step 5">
+      <p>A post spot treatment is done</p>
+    </div>
+    <div class="arrow">←</div>
+
+    <div class="step">
+      <img src="images/step4.png" alt="Step 4">
+      <p>The item is professionally cleaned</p>
+    </div>
+  </div>
+</section>
+
 
       <!--<section class="estimator" id="estimator">
         <h2>Price Estimator</h2>
@@ -404,11 +459,7 @@
       </section>  -->
 
       <section class="booking" id="booking">
-        <img
-          src="images/shop.jpg"
-          class="illustration"
-          alt="Book Pickup Illustration"
-        />
+        <img src="images/shop.jpg" class="illustration"alt="Book Pickup Illustration"/>
         <button class="button" onclick="openModal('bookModal')">
           Book Now
         </button>
@@ -435,9 +486,8 @@
     <!-- Modals -->
     <div id="pickupModal" class="modal">
       <div class="modal-content">
-        <span class="close-btn" onclick="closeModal('pickupModal')"
-          >&times;</span
-        >
+        <span class="close-btn" onclick="closeModal('pickupModal')">&times;</span>
+        
         <h3>Schedule Pickup</h3>
         <input type="text" placeholder="Your Name" />
         <input type="text" placeholder="Address" />
@@ -448,9 +498,7 @@
 
     <div id="estimateModal" class="modal">
       <div class="modal-content">
-        <span class="close-btn" onclick="closeModal('estimateModal')"
-          >&times;</span
-        >
+        <span class="close-btn" onclick="closeModal('estimateModal')">&times;</span>
         <h3>Estimate Price</h3>
         <input type="text" placeholder="Number of Items" />
         <input type="text" placeholder="Type of Items" />
