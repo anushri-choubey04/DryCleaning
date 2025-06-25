@@ -9,6 +9,7 @@ body {
 /* Navigation */
 nav {
   background: #5a89f7;
+  
   color: white;
   padding: 18px 20px;
   display: flex;
@@ -128,7 +129,7 @@ section h2 {
 
 .price {
   display: flex;
-
+  
   border-radius: 30px;
   flex-direction: column;
   background-color: #5a89f7;
@@ -169,7 +170,7 @@ section h2 {
   display: flex;
   justify-content: space-between;
   align-items: left;
-  background: rgb(238, 243, 247);
+  background: white;
   padding: 10px 15px;
   margin: 10px 0;
   border-radius: 8px;
@@ -196,7 +197,7 @@ section h2 {
 }
 
 .price-row img {
-  width: 70px;
+  width: 90px;
   height: 100px;
   object-fit: cover;
   justify-content: center;
@@ -404,7 +405,7 @@ section h2 {
   text-align: center;
   background: #5a89f7;
   background-image: linear-gradient(  rgba(14, 82, 104, 0.4),rgb(193, 232, 239));
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: white;
 }
 
@@ -511,13 +512,17 @@ section h2 {
   .menu-toggle {
     display: block;
   }
+  nav{
+    background: #5a89f7;
+    background-image: linear-gradient(  rgba(14, 82, 104, 0.4),rgb(74, 209, 229));
+  }
 
   .nav-links {
     flex-direction: column;
     position: absolute;
     top: 60px;
     left: 0;
-    background: #6886c6;
+    background:rgb(74, 209, 229);
     width: 100%;
     display: none;
     padding: 10px 0;
@@ -610,7 +615,7 @@ section h2 {
     display: flex;
     justify-content: space-between;
     align-items: left;
-    background: rgb(247, 251, 253);
+    background: white;
     padding: 10px 12px;
     border-radius: 8px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
